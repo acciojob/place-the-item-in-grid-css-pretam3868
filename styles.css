@@ -1,2 +1,31 @@
 
-/* Your CSS Code here. */
+/* Your CSS Code here. */body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Grid Container */
+.holder {
+    display: grid;
+    width: 200px;
+    height: 200px;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    box-sizing: border-box; /* Ensures padding and borders don't affect total size */
+}
+
+/* Grid Items */
+.item {
+    background-color: #8ab4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    /* Remove padding, margin, or borders that might affect the size */
+    box-sizing: border-box; 
+}
